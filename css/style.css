@@ -124,7 +124,7 @@ main{
 @media only screen and (max-width: 620px){
     .nav-bar-kanan{
         display: grid;
-        grid-column: right;
+        grid-column: center;
     }
 }
 
