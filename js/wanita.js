@@ -32,7 +32,7 @@ function calculateBMI() {
  
         else if (bmi >= 18.6 && bmi < 24.9) 
             result.innerHTML = 
-                `Berat Badan Ideal : <span>${bmi}</span>`;
+             `Berat Badan Ideal : <span>${bmi}</span>`;
  
         else result.innerHTML =
             `Berat Badan berlebih (obesitas) : <span>${bmi}</span>`;
