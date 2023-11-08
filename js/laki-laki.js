@@ -16,10 +16,10 @@ function calculateBMI() {
 
 
     if (height === "" || isNaN(height)) 
-        result.innerHTML = "Provide a valid Height!";
+        result.innerHTML = "isi kolom di atas!";
  
     else if (weight === "" || isNaN(weight)) 
-        result.innerHTML = "Provide a valid Weight!";
+        result.innerHTML = "isi kolom di atas!";
  
 
     else {
