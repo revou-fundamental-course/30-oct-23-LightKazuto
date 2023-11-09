@@ -87,7 +87,6 @@ img{
 
 @media only screen and (max-width: 800px) {
     .hero{
-        float: left;
         display: inline-block;
         vertical-align: top;
     }
