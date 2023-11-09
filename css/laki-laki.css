@@ -64,6 +64,17 @@ img{
 
 
 
+/*------------ keterangan --------------*/
+.main-isi{
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 50%;
+    margin-left: 25%;
+    font-size: 16px;
+}
+
+
+
 /* ----------- Pilihan Gender ----------- */
 h2{
     text-align: center;
@@ -135,6 +146,15 @@ main{
     }
 }
 
+@media only screen and (max-width : 800px){
+    .main-isi{
+        text-align: justify;
+        font-family: 'Gill Sans';
+        max-width: 50%;
+        margin-left: 25%;
+    
+    }
+}
 
 
 /* ------------------ section --------------*/
