@@ -15,12 +15,11 @@ function calculateBMI() {
     let result = document.querySelector("#result");
 
 
-    if (height === "" || isNaN(height)) 
-        result.innerHTML = "isi kolom di atas!";
+    if (weight === "" || isNaN(weight)) 
+        result.innerHTML = "isi kolom berat badan di atas!";
  
-    else if (weight === "" || isNaN(weight)) 
-        result.innerHTML = "isi kolom di atas!";
- 
+    else if (height === "" || isNaN(height)) 
+        result.innerHTML = "isi kolom tinggi badan di atas!";
 
     else {
  
@@ -36,5 +35,5 @@ function calculateBMI() {
  
         else result.innerHTML =
             `Berat Badan berlebih (obesitas) : <span>${bmi}</span>`;
-    }
+    }   
 }
