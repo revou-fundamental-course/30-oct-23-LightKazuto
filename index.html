@@ -4,40 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Calcultor BMI</title>
 </head>
 
 <body>
-    <header>
-        <nav class="nav-bar-kiri">
-           <a href="index.html"><img src="aset/logo-bmi.png" alt="Logo BMI"></a> 
-           <a href="index.html"><h3 class="logo" >Kalkulator BMI</h3></a>
-            <nav class="nav-bar-kanan">
-                <a class="active3" href="about.html">About</a>
-                <a class="active2" href="contact.html">Contact</a>
-                <a class="active" href="index.html">Home</a>
-            </nav>
-        </nav>
-    </header>
-
-    <main>
-        <p class="main-isi">
-            Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang
-            menunjang penampilan, berat badan ideal juga menandakan konsidi tubuh yang sehat.
-            bagaimana denganmu? Yuk, coba hitung sekarang di kalkulator BMI.
-        </p>
-        <section class="judul">
-            <h2>Pilih Jenis Kelamin</h2>
-        </section>
-            <div class="gender">
-                <a href="laki-laki.html"><button>Laki-laki</button></a>
-                <a href="wanita.html"><button>Wanita</button></a>
+    <div class="container">
+        <nav>
+            <div class="sidebar">
+                <div class="logo">
+                    <img src="aset/logo-bmi.png" alt="Logo BMI">
+                    <h2>Calculator BMI</h2>
+                </div>
+                <div>
+                </div>
             </div>
+        </nav>
 
-        
-    </main>
-    
+        <main>
+            <div class="content">
+                <br><br><h2>Welcome</h2><br>
+                <div class="row">
+                    <div class="text">
+                            <p>
+                                Ideal body weight is everyone's dream. Not only has the body shape
+                                supports appearance, ideal body weight also indicates a healthy body condition.
+                                how about you? Come on, try calculating it now on the BMI calculator.
+                            </p><br><br>
+                        
+                            <div class="summary" id="frmbmi" name="frmbmi">
+                                <p>Please select your gender:</p>
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Male</label>
+                                
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label><br><br>
+                                
+                                <label class="label">Input Weight</label>
+                                <input class="input-field" type="number" id="weight" placeholder="Your Weight">
 
+                                <label class="label">Input Height</label>
+                                <input type="number" id="height" placeholder="Your Height">
+
+                                <label class="label">Input Age</label>
+                                <input type="number" id="age" placeholder="Your Age">
+
+                                <button id="btn" class="calculate">Calculate</button>
+                                <button id="reset" onclick="clearInput()">Reset</button>
+                            </div>
+
+                        </div>
+
+                        <div class="text" id="text2">
+                            <p>
+                                <h3>Feature advantages:</h3></p>
+                                <ul>
+                                    <li>
+                                        1. Calculate body weight
+                                    </li>
+                                    <li>
+                                        2. Determine the weight category
+                                    </li>
+                                    <li>
+                                        3. Easy to understand display
+                                    </li>
+                                </ul><br>
+                                This calculator can be used by all groups. action for reduction
+                                Weight loss should only be done and consulted with people who meet it
+                                conditions like a doctor.<br><br>
+            
+                                This calculator gives an idea of how your weight compares to your values
+                                In general, Body Mass Index (BMI) is calculated as your body weight 
+                                (in kilograms) divided by your body weight (in kilograms).
+                                with the square of your height (in meters) or BMI=kg/M2.
+                            </p>
+                        </div>
+                    </div>
+
+                     <div class="result-section">
+                        <h3>Result of Calculation </h3><br>
+                    <div id="result"></div>
+            </div>
+            </div>
+        </main>
+    </div>
 
 </body>
 </html>
+
+<script src="js/Scrip.js"></script>

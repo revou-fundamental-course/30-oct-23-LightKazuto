@@ -4,10 +4,6 @@ window.onload = () => {
     button.addEventListener("click", calculateBMI);
 };
 
-function resetButton(){
-    document.getElementsByClassName("input-section").reset();
-}
-
 function calculateBMI() {
     
     let weight = parseInt(document
